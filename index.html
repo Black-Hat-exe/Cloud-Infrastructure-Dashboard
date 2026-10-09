@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Infrastructure Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-logo">F</div>
+                <div class="brand-info">
+                    <h3>S.M. Ertaza</h3>
+                    <p>Portfolio</p>
+                </div>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-item active">
+                    <i class="fa-solid fa-table-cells-large"></i> Dashboard
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-circle-nodes"></i> Nodes
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-shield-halved"></i> Security
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-gear"></i> Settings
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="footer-logo">F</div>
+                <div class="footer-info">
+                    <h3>S.M. Ertaza</h3>
+                    <p>Portfolio</p>
+                </div>
+                <small class="version-tag">Cloud Infrastructure Dashboard</small>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard Content -->
+        <main class="main-content">
+            
+            <!-- Top Navigation Header -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="header-actions">
+                    <button class="action-btn"><i class="fa-regular fa-folder"></i></button>
+                    <button class="action-btn badge-btn"><i class="fa-regular fa-bell"></i></button>
+                    <div class="user-profile">
+                        <img src="https://placeholder.com" alt="User Profile">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Title Section -->
+            <section class="dashboard-title-row">
+                <h1 class="main-title">Cloud Infrastructure Dashboard</h1>
+                <div class="status-badge">
+                    ALL NODES SECURE // PK-30250
+                </div>
+            </section>
+
+            <!-- Metric Cards Row -->
+            <h2 class="section-title">Metric Cards</h2>
+            <section class="metrics-grid">
+                
+                <!-- Uptime Card -->
+                <div class="card metric-card purple-glow">
+                    <div class="metric-header">
+                        <span>Uptime</span>
+                        <span class="mini-graph-tag text-purple">~ Live</span>
+                    </div>
+                    <div class="metric-value">99.98%</div>
+                    <div class="chart-container">
+                        <!-- Custom CSS SVG Placeholder for Chart Wave -->
+                        <svg viewBox="0 0 100 30" class="wave-chart">
+                            <path d="M0,25 Q15,5 30,20 T60,10 T90,22 T100,15" fill="none" stroke="#bc34fa" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="card-timeline">
+                        <span>Live</span><span>50m</span><span>10m</span><span>High</span>
+                    </div>
+                </div>
+
+                <!-- Network Traffic Card -->
+                <div class="card metric-card blue-glow">
+                    <div class="metric-header">
+                        <span>Network Traffic</span>
+                        <i class="fa-solid fa-chart-simple text-blue"></i>
+                    </div>
+                    <div class="metric-value">
+                        <svg viewBox="0 0 100 25" class="wave-fill-chart">
+                            <path d="M0,25 Q15,5 30,15 T60,5 T90,18 L100,25 Z" fill="url(#blue-grad)" opacity="0.3"/>
+                            <path d="M0,25 Q15,5 30,15 T60,5 T90,18" fill="none" stroke="#2575fc" stroke-width="2"/>
+                            <defs>
+                                <linearGradient id="blue-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                    <stop offset="0%" stop-color="#2575fc"/>
+                                    <stop offset="100%" stop-color="transparent"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="card-timeline">
+                        <span>Low</span><span>50m</span><span>10m</span><span>High</span>
+                    </div>
+                </div>
+
+                <!-- Blocked Threats Card -->
+                <div class="card metric-card red-glow">
+                    <div class="metric-header">
+                        <span>Blocked Threats</span>
+                        <i class="fa-solid fa-arrow-down-long text-red"></i>
+                    </div>
+                    <div class="metric-value text-red">0</div>
+                    <div class="chart-container">
+                        <div class="flat-line red"></div>
+                    </div>
+                    <div class="card-timeline">
+                        <span>Live</span><span>50m</span><span>10m</span><span>High</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Data Hub Section -->
+            <h2 class="section-title">Data Hub</h2>
+            <section class="data-hub-grid">
+                
+                <!-- Connected Nodes Table Card -->
+                <div class="card table-card">
+                    <div class="table-card-header">
+                        <h3>Connected Nodes</h3>
+                        <div class="dropdown-select">
+                            <span>Real-time ping</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="responsive-table-wrapper">
+                        <table class="nodes-table">
+                            <thead>
+                                <tr>
+                                    <th>IP Address</th>
+                                    <th>Ping</th>
+                                    <th>Server Load</th>
+                                    <th>Active Connection</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>192.168.255.19</td>
+                                    <td><span class="status-dot green"></span> 5</td>
+                                    <td><div class="progress-bar blue" style="width: 45%"></div></td>
+                                    <td>
+                                        <div class="connection-node-map">
+                                            <i class="fa-solid fa-circle-nodes"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>192.168.255.233</td>
+                                    <td><span class="status-dot green"></span> 8</td>
+                                    <td><div class="progress-bar blue" style="width: 30%"></div></td>
+                                    <td></td>
+                                </tr>
+                                <tr class="highlighted-row">
+                                    <td>192.168.235.223</td>
+                                    <td><span class="status-dot green"></span> 3</td>
+                                    <td><div class="progress-bar blue" style="width: 65%"></div></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>192.168.235.233</td>
+                                    <td><span class="status-dot green"></span> 5</td>
+                                    <td><div class="progress-bar blue" style="width: 40%"></div></td>
+                                    <td>Active Load</td>
+                                </tr>
+                                <tr>
+                                    <td>192.168.235.233</td>
+                                    <td><span class="status-dot green"></span> 3</td>
+                                    <td><div class="progress-bar green-bar" style="width: 55%"></div></td>
+                                    <td>Active Load</td>
+                                </tr>
+                                <tr>
+                                    <td>192.168.235.233</td>
+                                    <td><span class="status-dot green"></span> 4</td>
+                                    <td><div class="progress-bar red-bar" style="width: 75%"></div></td>
+                                    <td>Active Load</td>
+                                </tr>
+                                <tr>
+                                    <td>192.168.235.233</td>
+                                    <td><span class="status-dot green"></span> 3</td>
+                                    <td><div class="progress-bar green-bar" style="width: 50%"></div></td>
+                                    <td>Active Load</td>
+                                </tr>
+                             <td>192.168.235.233</td>
+                                    <td><span class="status-dot green"></span> 8</td>
+                                    <td><div class="progress-bar blue" style="width: 35%"></div></td>
+                                    <td></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- System Log Card -->
+                <div class="card log-card">
+                    <div class="log-card-header">
+                        <h3>System Log Card</h3>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <div class="terminal-container">
+                        <div class="terminal-line terminal-header">Terminal ...</div>
+                        <div class="terminal-body" id="logTerminal">
+                            <p class="log-item">Intrusion prevented on Port 443.</p>
+                            <p class="log-item">Intrusion prevented on Port 443.</p>
+                            <p class="log-item">Intrusion prevented on Port 445.</p>
+                            <p class="log-item">Intrusion prevented on Port 443.</p>
+                            <p class="log-item">Intrusion prevented on Port 443.</p>
+                            <p class="log-item">Intrusion prevented on Port 443.</p>
+                            <p class="log-item">Intrusion prevented on Port 443.</p>
+                            <p class="log-item">Intrusion prevented on Port 443.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Dashboard JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
